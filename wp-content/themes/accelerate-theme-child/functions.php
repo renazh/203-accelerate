@@ -16,6 +16,12 @@ function accelerate_child_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
+function accelerate_child_google_fonts() {
+	wp_enqueue_style ( 'accelerate-style', get_stylesheet_uri() );
+	wp_enqueue_style ( 'accelerate-google-fonts', '//fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&display=swap');
+}
+add_action( 'wp_enqueue_scripts', 'accelerate_child_google_fonts' );
+
 // Custom post types function
 function create_custom_post_types() {
 // create a case study custom post type
