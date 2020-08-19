@@ -200,3 +200,33 @@ figure {
 .contact-content a.button {
   margin-top: 30px;
 }
+
+/* 404 page styes */
+.error-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.error-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+}
+.error-main figure {
+  width: 30%;
+  padding-top: 75px;
+}
+.error-text h2 {
+  font-size: 36px;
+  color: #45ac9d;
+}
+.error-text p {
+  font-size: 20px;
+}
+.error-text span {
+  color: #45ac9d;
+  font-weight: bold;
+}
