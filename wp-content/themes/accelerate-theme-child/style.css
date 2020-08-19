@@ -144,3 +144,59 @@ ul.social-media-menu i {
   font-size: 18px;
   background-color: #45ac9d;
 }
+
+/* About page styles */
+.about-content p {
+  height: auto;
+  width: 35%;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 0 auto;
+}
+.services h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+}
+.services p {
+  text-align: center;
+  color: #a6a6a6;
+  font-size: 14px;
+  width: 45%;
+}
+.services-first,
+.services-third {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.services-second,
+.services-fourth {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row-reverse wrap;
+}
+figure {
+  width: 30%;
+}
+.services-text {
+  width: 60%;
+}
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border-top: solid 1px #a6a6a6;
+}
+.contact-content h3 {
+  padding-right: 50px;
+}
+.contact-content a.button {
+  margin-top: 30px;
+}
