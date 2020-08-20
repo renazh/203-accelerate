@@ -9,6 +9,8 @@ Version:      2.0.0
 Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  accelerate-theme-child
 */
+
+/* Front page styles */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
@@ -181,7 +183,7 @@ ul.social-media-menu i {
   align-items: center;
   flex-flow: row-reverse wrap;
 }
-figure {
+.services-main figure {
   width: 30%;
 }
 .services-text {
@@ -201,7 +203,7 @@ figure {
   margin-top: 30px;
 }
 
-/* 404 page styes */
+/* 404 PAGE STYLES */
 .error-main {
   display: flex;
   justify-content: space-around;
@@ -223,7 +225,7 @@ figure {
   font-size: 36px;
   color: #45ac9d;
   font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 900;
 }
 .error-text p {
   font-size: 20px;
@@ -231,4 +233,35 @@ figure {
 .error-text span {
   color: #45ac9d;
   font-weight: bold;
+}
+/* END 404 PAGE STYLES */
+
+/* Twitter front page widget styles */
+.twitter {
+  width: 50%;
+  float: left;
+  padding-left: 50px;
+}
+.widget-title {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+.tweets {
+  width: 60%;
+  padding-top: 1em;
+  margin: 0;
+}
+
+/* Mailchimp newsletter sidebar styles */
+.mc4wp-form-fields p {
+  font-size: 15px;
+}
+.mc4wp-form-fields label input {
+  margin-top: 15px;
+}
+.mc4wp-form-fields input[type="submit"] {
+  background: #45ac9d;
+  padding-bottom: 2em;
 }
